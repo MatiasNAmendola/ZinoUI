@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SelectBox - ZinoUI HTML5 framework</title>
+        <meta name="description" content="Custom select box replacement.">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="../../themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../themes/silver/zino.selectbox.css">
+        <script src="../../jquery.min.js"></script>
+        <script src="../../zino.selectbox.min.js"></script>
+                <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <select name="selectbox" id="selectbox" tabindex="1">
+    <option value="">-- Language --</option>
+    <optgroup label="oop">
+		<option value="javascript">Javascript</option>
+		<option value="ruby">Ruby</option>
+	</optgroup>
+	<option value="objective_c">Objective C</option>
+	<option value="visual_basic" disabled="disabled">Visual Basic</option>
+	<option value="python">Python</option>
+	<option value="lua">Lua</option>
+	<option value="php">PHP</option>
+</select>
+
+<script type="text/javascript">
+$(function () {
+	$("#selectbox").zinoSelectbox();
+});
+</script>    </body>
+</html>

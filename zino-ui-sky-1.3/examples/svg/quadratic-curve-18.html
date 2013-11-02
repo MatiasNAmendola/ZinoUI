@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SVG - ZinoUI HTML5 framework</title>
+        <meta name="description" content="Wrapper micro-library for working with SVG (scalable vector graphics).">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="../../themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../themes/silver/zino.svg.css">
+        <script src="../../jquery.min.js"></script>
+        <script src="../../zino.svg.min.js"></script>
+                <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="svg"></div>
+
+<script type="text/javascript">
+$(function () {
+    var api = ZinoSvg({
+        target: document.getElementById("svg"),
+        width: 520,
+        height: 320
+    });
+    
+    api.quadraticCurve(100, 50, 200, 50, 200, 150).attr({
+        "fill": "none",
+        "stroke": "#EED592",
+        "stroke-width": 4,
+        "stroke-linecap": "round"
+    }).insert();
+    
+});
+</script>    </body>
+</html>

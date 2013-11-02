@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>RadioGroup - ZinoUI HTML5 framework</title>
+        <meta name="description" content="Replace standard input radio buttons with enhanced version.">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="../../themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../themes/silver/zino.radiogroup.css">
+        <script src="../../jquery.min.js"></script>
+        <script src="../../zino.radiogroup.min.js"></script>
+                <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="radio"></div>
+
+<script type="text/javascript">
+$(function () {
+    $("#radio").zinoRadiogroup({
+        data: [
+            {label: "New York"}, 
+            {label: "Paris"}, 
+            {label: "Barcelona", checked: true}, 
+            {label: "Sao Paolo"}, 
+            {label: "London"},
+            {label: "Sofia"}
+        ],
+    });
+});
+</script>    </body>
+</html>

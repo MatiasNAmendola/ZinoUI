@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ProgressBar - ZinoUI HTML5 framework</title>
+        <meta name="description" content="Displays a status indicator for loading state, standard percentage, and other progress indicators.">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="../../themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../themes/silver/zino.progressbar.css">
+        <script src="../../jquery.min.js"></script>
+        <script src="../../zino.progressbar.min.js"></script>
+                <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="progressbar"></div>
+
+<script type="text/javascript">
+$(function () {
+    var $pbar = $("#progressbar").zinoProgressbar({
+    	value: 12,
+		max: 143,
+		width: 500,
+		height: 20,
+		create: function (event, ui) {
+			//console.log("create");
+			var i = ui.value;
+			var id = window.setInterval(function () {
+				i += 5;
+				$pbar.zinoProgressbar("option", "value", i);
+				//console.log($pbar.zinoProgressbar("option", "value"));
+				if (i >= ui.max) {
+					window.clearInterval(id);
+				}
+			}, 500);
+		},
+		change: function (event, ui) {
+			//console.log("change");
+		},
+		complete: function (event, ui) {
+			//console.log("complete");
+		}
+	});
+});
+</script>    </body>
+</html>

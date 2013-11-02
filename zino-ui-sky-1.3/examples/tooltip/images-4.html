@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tooltip - ZinoUI HTML5 framework</title>
+        <meta name="description" content="Shows additional information for any element on hover or focus.">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="../../themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../themes/silver/zino.tooltip.css">
+        <script src="../../jquery.min.js"></script>
+        <script src="../../zino.tooltip.min.js"></script>
+                <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <img class="t_browser" src="../../app/web/img/demos/firefox.png" alt="Firefox" title="Firefox T" />
+<img class="t_browser" src="../../app/web/img/demos/chrome.png" alt="Chrome" title="Chrome T" />
+<img class="t_browser" src="../../app/web/img/demos/safari.png" alt="Safari" title="Safari T" />
+<img class="t_browser" src="../../app/web/img/demos/opera.png" alt="Opera" title="Opera T" />
+<img class="t_browser" src="../../app/web/img/demos/ie.png" alt="Internet Explorer" title="IE T" />
+
+<script type="text/javascript">
+$(function () {
+	$(".t_browser").zinoTooltip({
+		follow: false,
+		position: "bottom"
+	});
+});
+</script>    </body>
+</html>

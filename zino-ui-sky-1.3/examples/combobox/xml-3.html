@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ComboBox - ZinoUI HTML5 framework</title>
+        <meta name="description" content="A combination of a drop-down list or list box and a single-line editable textbox.">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="../../themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../themes/silver/zino.combobox.css">
+        <script src="../../jquery.min.js"></script>
+        <script src="../../zino.combobox.min.js"></script>
+                <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <input type="text" id="combo" />
+
+<script type="text/javascript">
+$(function () {
+	$("#combo").zinoCombobox({
+		dataUrl: "../../request/?plugin=combobox&type=xml",
+		dataType: "xml",
+		xmlRoot: "states",
+		xmlRecord: "state",
+		autocomplete: true
+	});
+});
+</script>    </body>
+</html>

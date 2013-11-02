@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Canvas - ZinoUI HTML5 framework</title>
+        <meta name="description" content="Wrapper micro-library for working with HTML5 Canvas element.">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="../../themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../themes/silver/zino.canvas.css">
+        <script src="../../jquery.min.js"></script>
+        <script src="../../zino.canvas.min.js"></script>
+                <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="canvas"></div>
+
+<script type="text/javascript">
+$(function () {
+    var api = ZinoCanvas({
+        target: document.getElementById("canvas"),
+        width: 520,
+        height: 320
+    });
+    
+    api.bind("click", function (e) {
+        if (window.console && window.console.log) {
+            console.log(arguments, this);
+        }
+    })
+    .attr({
+        lineWidth: 4,
+        lineCap: "round",
+        lineJoin: "round",
+        fillStyle: "#EED592",
+        strokeStyle: "#B59554"
+    })
+    .moveTo(350, 150)
+    .lineTo(300, 130)
+    .arcTo(350, 150, 300, 170, 80)
+    .lineTo(350, 150)
+    .stroke()
+    .fill();
+});
+</script>    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Menu - ZinoUI HTML5 framework</title>
+        <meta name="description" content="Creates nestable menus, accessible via keyboard.">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="../../themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../themes/silver/zino.menu.css">
+        <script src="../../jquery.min.js"></script>
+        <script src="../../zino.menu.min.js"></script>
+                <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="menu_xml"></div>
+
+<script type="text/javascript">
+$(function () {
+    $("#menu_xml").zinoMenu({
+        dataUrl: "../../request/?plugin=menu&type=xml",
+        dataType: "xml",
+        xmlRoot: "nba",
+        xmlRecord: "item"
+    });
+});
+</script>    </body>
+</html>

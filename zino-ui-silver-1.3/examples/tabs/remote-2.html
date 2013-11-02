@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tabs - ZinoUI HTML5 framework</title>
+        <meta name="description" content="Transforms a set of container elements into a tab structure.">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="../../themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../themes/silver/zino.tabs.css">
+        <script src="../../jquery.min.js"></script>
+        <script src="../../zino.tabs.min.js"></script>
+                <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="tabs">
+    <ul>
+		<li><a href="../../request/?plugin=tabs&p=1">Remote tab 1</a></li>
+		<li><a href="../../request/?plugin=tabs&p=2">Remote tab 2</a></li>
+	</ul>
+</div>
+
+<script type="text/javascript">
+$(function () {
+	$("#tabs").zinoTabs();
+});
+</script>    </body>
+</html>

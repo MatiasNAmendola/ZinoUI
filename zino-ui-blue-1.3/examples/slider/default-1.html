@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Slider - ZinoUI HTML5 framework</title>
+        <meta name="description" content="Displays a flexible slider with ranges and accessibility via keyboard.">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="../../themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../themes/silver/zino.slider.css">
+        <script src="../../jquery.min.js"></script>
+        <script src="../../zino.position.min.js"></script>
+        <script src="../../zino.draggable.min.js"></script>
+        <script src="../../zino.slider.min.js"></script>
+                <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="slider_h2"></div>
+<input type="text" id="value_h2" style="width: 50px; text-align: right" />
+<script type="text/javascript">
+$(function () {
+	$("#slider_h2").zinoSlider({
+		bounds: [22],
+		maxValue: 150,
+		slide: function (event, ui) {
+			$("#value_h2").val(ui.data.rightX);
+		}
+	});
+});
+</script>    </body>
+</html>

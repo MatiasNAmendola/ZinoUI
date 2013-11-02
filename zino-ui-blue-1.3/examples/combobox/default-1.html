@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ComboBox - ZinoUI HTML5 framework</title>
+        <meta name="description" content="A combination of a drop-down list or list box and a single-line editable textbox.">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="../../themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../themes/silver/zino.combobox.css">
+        <script src="../../jquery.min.js"></script>
+        <script src="../../zino.combobox.min.js"></script>
+                <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <input type="text" id="combo" />
+ 
+<script type="text/javascript">
+$(function () {
+	var states = [
+	  			"Alabama", "Alaska", "Arizona", "Arkansas", "California",
+				"Colorado", "Connecticut", "Delaware", "District of Columbia", "Florida",
+				"Georgia", "Hawaii", "Idaho", "Illinois", "Indiana",
+				"Iowa", "Kansas", "Kentucky", "Louisiana", "Maine",
+				"Maryland", "Massachusetts", "Michigan", "Minnesota", "Missouri",
+				"Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey",
+				"New Mexico", "New York", "North Carolina", "North Dakota", "Ohio",
+				"Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina",
+				"South Dakota", "Tennessee", "Texas", "Utah", "Vermont",
+				"Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"
+			];
+	$("#combo").zinoCombobox({
+		data: states,
+		multiple: true,
+		autocomplete: true
+	});
+});
+</script>    </body>
+</html>

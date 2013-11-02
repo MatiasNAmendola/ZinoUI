@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TreeView - ZinoUI HTML5 framework</title>
+        <meta name="description" content="Presents a hierarchical view of information.">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="../../themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../themes/silver/zino.treeview.css">
+        <script src="../../jquery.min.js"></script>
+        <script src="../../zino.treeview.min.js"></script>
+                <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="treeview"></div>
+
+<script type="text/javascript">
+$(function () {
+    $("#treeview").zinoTreeview({
+        dataUrl: "../../request/?plugin=treeview&type=xml",
+		dataType: "xml",
+		xmlRoot: "nba",
+		xmlRecord: "item"
+    });
+});
+</script>    </body>
+</html>

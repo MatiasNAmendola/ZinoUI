@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Canvas - ZinoUI HTML5 framework</title>
+        <meta name="description" content="Wrapper micro-library for working with HTML5 Canvas element.">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="../../themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../themes/silver/zino.canvas.css">
+        <script src="../../jquery.min.js"></script>
+        <script src="../../zino.canvas.min.js"></script>
+                <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="canvas"></div>
+
+<script type="text/javascript">
+$(function () {
+    var api = ZinoCanvas({
+        target: document.getElementById("canvas"),
+        width: 520,
+        height: 320
+    });
+    
+    // Linear gradient
+    var linear = api.linearGradient(0, 0, 260, 320);
+    linear.addColorStop(0, "#EED592");
+    linear.addColorStop(1, "#B59554");
+    
+    api.attr({
+        fillStyle: linear
+    }).begin().rect(0, 0, 260, 320).fill()
+    
+    // Radial gradient
+    var radial = api.radialGradient(390, 160, 10, 390, 160, 150);
+    radial.addColorStop(0, "#EED592");
+    radial.addColorStop(1, "#B59554");
+    
+    api.attr({
+        fillStyle: radial
+    }).begin().rect(260, 0, 260, 320).fill();
+});
+</script>    </body>
+</html>

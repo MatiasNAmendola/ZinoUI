@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chart - ZinoUI HTML5 framework</title>
+        <meta name="description" content="Data visualization, pie & donuts charts.">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="../../themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../themes/silver/zino.chart.css">
+        <script src="../../jquery.min.js"></script>
+        <script src="../../zino.svg.min.js"></script>
+        <script src="../../zino.chart.min.js"></script>
+                <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="chart"></div>
+
+<script type="text/javascript">
+$(function () {
+    $("#chart").zinoChart({
+        type: "pie",
+        width: 530,
+        height: 320,
+        radius: 100,
+        series: [
+            ['Team', 'All Star Players'],
+            ['N.Y. Knicks', 13],
+            ['Miami Heat', 32],
+            ['N.O. Hornets', 15],
+            ['L.A. Lakers', 27],
+            ['O.C. Thunder ', 8],
+            ['S.A. Spurs', 5]
+    	]
+    });
+});   
+</script>    </body>
+</html>

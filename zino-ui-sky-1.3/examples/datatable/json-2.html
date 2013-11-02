@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DataTable - ZinoUI HTML5 framework</title>
+        <meta name="description" content="An on-screen display of the information presented in columnar format, with field names at the top.">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="../../themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../themes/silver/zino.datatable.css">
+        <script src="../../jquery.min.js"></script>
+        <script src="../../zino.datatable.min.js"></script>
+                <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <div id="datatable"></div>
+
+<script type="text/javascript">
+$(function () {
+	$("#datatable").zinoDatatable({
+		dataUrl: "../../request/?plugin=datatable&type=json",
+		dataType: "json"
+	});
+});
+</script>    </body>
+</html>

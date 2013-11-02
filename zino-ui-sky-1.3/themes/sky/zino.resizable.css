@@ -1,0 +1,72 @@
+/*!
+ * ZinoUI v1.3 (http://zinoui.com)
+ * Copyright 2012-2013 Dimitar Ivanov. All Rights Reserved.
+ * 
+ * Zino UI commercial licenses may be obtained at http://zinoui.com/license
+ * If you do not own a commercial license, this file shall be governed by the
+ * GNU General Public License (GPL) version 3.
+ * For GPL requirements, please review: http://www.gnu.org/copyleft/gpl.html
+ */
+.zui-resizable{
+	position: relative;
+}
+.zui-resizable-handle{
+	position: absolute;
+	font-size: 0.1px;
+}
+.zui-resizable-n{
+	left: 0;
+	top: -5px;
+	width: 100%;
+	height: 7px;
+	cursor: n-resize;
+}
+.zui-resizable-e{
+	top: 0;
+	right: -5px;
+	height: 100%;
+	width: 7px;
+	cursor: e-resize;
+}
+.zui-resizable-s{
+	bottom: -5px;
+	left: 0;
+	width: 100%;
+	height: 7px;
+	cursor: s-resize;
+}
+.zui-resizable-w{
+	left: -5px;
+	top: 0;
+	height: 100%;
+	width: 7px;
+	cursor: w-resize;
+}
+.zui-resizable-ne{
+	cursor: ne-resize;
+	top: -5px;
+	right: -5px;
+	height: 9px;
+	width: 9px;
+}
+.zui-resizable-nw{
+	cursor: nw-resize;
+	top: -5px;
+	left: -5px;
+	height: 9px;
+	width: 9px;
+}
+.zui-resizable-se{
+	cursor: se-resize;
+	bottom: -5px;
+	right: -5px;
+	height: 9px;
+	width: 9px;
+}
+.zui-resizable-sw{
+	cursor: sw-resize;
+	bottom: -5px;
+	left: -5px;
+	height: 9px;
+	width: 9px;
+}

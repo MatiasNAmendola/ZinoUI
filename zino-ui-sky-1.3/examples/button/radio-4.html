@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Button - ZinoUI HTML5 framework</title>
+        <meta name="description" content="Enhances a form with themable buttons.">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="../../themes/silver/zino.core.css">
+        <link rel="stylesheet" href="../../themes/silver/zino.button.css">
+        <script src="../../jquery.min.js"></script>
+        <script src="../../zino.button.min.js"></script>
+                <style type="text/css">body{padding: 15px; font: normal 12px Arial, sans-serif;}</style>
+    </head>
+    <body>
+    <form action="" method="get"> 
+    <input type="radio" name="sex" id="sex_male" value="male" checked="checked" tabindex="5" />
+	<label for="sex_male">Male</label>
+	<input type="radio" name="sex" id="sex_female" value="female" tabindex="6" />
+	<label for="sex_female">Female</label>
+	<input type="radio" name="sex" id="sex_infant" value="infant" tabindex="7" disabled="disabled" />
+	<label for="sex_infant">Infant</label>
+</form>
+
+<script type="text/javascript">
+$(function () {
+	$("input[name='sex']").zinoButtonset();
+});
+</script>    </body>
+</html>
