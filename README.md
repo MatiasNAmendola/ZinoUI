@@ -26,3 +26,5 @@ ZinoUI has 25+ modern jquery compatible widgets, some of which are Menu, Tabs, S
 
 Web Standards Compliant
 ZinoUI utilize HTML5 features and graceful fallback if they are not supported. ZinoUI adopt various W3C recommendations as like as WAI-ARIA, SVG and HTML5 Canvas.
+
+http://zinoui.com/
